@@ -6,7 +6,8 @@
 <title>KYC and Wallet Activation Explainer</title>
 <meta name="description" content="Do you need KYC on Redbelly? One page with every answer.">
 <meta property="og:title" content="KYC and Wallet Activation Explainer">
-<meta property="og:image" content="assets/decision-guide.png">
+<meta property="og:image" content="https://kyc-explain.vercel.app/assets/decision-guide.png">
+<link rel="icon" href="assets/dao-logo-on-dark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
 body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.5 "Be Vietnam Pro",system-ui,sans-serif}
 main{max-width:1000px;margin:0 auto;padding:48px 16px 80px}
 .wrap{max-width:72ch}
+.brand{display:block;height:56px;width:auto;margin:0 0 24px}
 .caps{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 h1{font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.02em;margin:8px 0 12px}
 h2{font-size:28px;font-weight:600;letter-spacing:-.01em;margin:56px 0 8px}
@@ -41,6 +43,7 @@ footer{margin-top:64px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body><main>
+<picture><source media="(prefers-color-scheme: light)" srcset="assets/dao-logo-on-light.png"><img class="brand" src="assets/dao-logo-on-dark.png" alt="Redbelly DAO"></picture>
 <div class="caps">Documentation</div>
 <h1>KYC and Wallet Activation Explainer</h1>
 <p class="lead wrap">Lead with the answer: you need KYC to send transactions on Redbelly mainnet. You do not need it to hold RBNT on an exchange or wrapped RBNT on another chain.</p>
@@ -133,7 +136,7 @@ footer{margin-top:64px;color:var(--muted);font-size:14px}
 <div class="card"><b>The wallet will not connect or the account will not enable.</b>
 <p>Redbelly Access splits help in two. Identity problems go to Averer. Connection or account errors go to Redbelly Support <span class="s">[S2]</span>. Use the <a href="https://vine.redbelly.network/support/">Redbelly Support page</a>, which points to the Redbelly Discord <span class="s">[S14]</span>. Check the network details in Part C first.</p></div>
 <div class="card"><b>Open a support ticket with Averer.</b>
-<p>Start from the Identity Verification support block on <a href="https://access.redbelly.network/">Redbelly Access</a>. It is the official route to Averer <span class="s">[S2]</span>. I could not retrieve a public Averer help or ticket page, so I link none. Unconfirmed: add the exact Averer portal links here once checked on the live portal.</p></div>
+<p>Start from the Identity Verification support block on <a href="https://access.redbelly.network/">Redbelly Access</a>. It is the official route to Averer <span class="s">[S2]</span>. This guide links no separate Averer help or ticket page, because none is confirmed in an official Redbelly source. In your ticket, give the wallet address you used and the exact message on screen.</p></div>
 
 <h2 id="sources">Sources</h2>
 <p>Every factual claim above carries a tag. Claims without an official page are marked unconfirmed in the text.</p>
@@ -148,10 +151,10 @@ footer{margin-top:64px;color:var(--muted);font-size:14px}
 <li>[S8] Bridged tokens, WRBNT: <a href="https://vine.redbelly.network/bridged-tokens/lucidlabs/">vine.redbelly.network/bridged-tokens/lucidlabs</a>.</li>
 <li>[S9] TASK-18 brief on the <a href="https://taskboard.redbellydao.network/">DAO Task Board</a>. DAO regional restriction removed. Wallet limit of about 10, verified with Averer, no public Averer page found.</li>
 <li>[S10] Redbelly Network post on KYC waiting times, January 2025: <a href="https://x.com/RedbellyNetwork/status/1875013929019314508">x.com/RedbellyNetwork</a>.</li>
+<li>[S11] Task Board brand kit: <a href="https://taskboard.redbellydao.network/brand">taskboard.redbellydao.network/brand</a>.</li>
 <li>[S12] Community reported, unconfirmed: <a href="https://dev.to/rahmandefi/redbelly-network-troubleshooting-fixes-for-the-21-most-common-developer-errors-17i">DEV Community troubleshooting guide</a>. Enabling needs a funded account and is per network.</li>
 <li>[S13] Environments: <a href="https://vine.redbelly.network/environments">vine.redbelly.network/environments</a>. Mainnet name, RPC URL, chain ID 151, symbol, explorer.</li>
 <li>[S14] Redbelly support: <a href="https://vine.redbelly.network/support/">vine.redbelly.network/support</a>.</li>
-<li>[S11] Task Board brand kit: <a href="https://taskboard.redbellydao.network/brand">taskboard.redbellydao.network/brand</a>.</li>
 </ul>
 <footer>Last verified 16 Oct 2026. Facts expire, so recheck the sources before relying on this page.</footer>
 </main></body></html>
