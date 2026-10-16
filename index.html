@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KYC and Wallet Activation Explainer</title>
+<meta name="description" content="Do you need KYC on Redbelly? One page with every answer.">
+<meta property="og:title" content="KYC and Wallet Activation Explainer">
+<meta property="og:image" content="assets/decision-guide.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c1317;--card:#141f26;--edge:#263641;--text:#f1f5f8;--text2:#c2ced6;--muted:#8fa1ad;--accent:#ffb3ae;--brand:#EF5350;--ok:#86EFAC;--warn:#FCD34D;--steel:#1d3140}
+@media(prefers-color-scheme:light){:root{--bg:#EDF1F4;--card:#FFFFFF;--edge:#c9d4dc;--text:#0F1A22;--text2:#2b3a45;--muted:#52636f;--accent:#B3272A;--ok:#14532d;--warn:#7a5200;--steel:#DDE6EDDD}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.5 "Be Vietnam Pro",system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:48px 16px 80px}
+.wrap{max-width:72ch}
+.caps{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.02em;margin:8px 0 12px}
+h2{font-size:28px;font-weight:600;letter-spacing:-.01em;margin:56px 0 8px}
+h3{font-size:20px;font-weight:600;margin:32px 0 4px}
+p,li{color:var(--text2)} .lead{font-size:18px;color:var(--text)}
+a{color:var(--accent)}
+code,.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:14px;font-weight:500;letter-spacing:.05em}
+.card{background:var(--card);border:1px solid var(--edge);border-radius:8px;padding:20px 24px;margin:16px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+.tbl{width:100%;border-collapse:collapse;margin:16px 0}
+.tbl th,.tbl td{text-align:left;padding:12px;border-bottom:1px solid var(--edge);vertical-align:top}
+.tbl th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tag{display:inline-block;font-weight:700;font-size:14px;padding:2px 10px;border-radius:4px;border:1px solid}
+.need{color:var(--brand);border-color:var(--brand)} .no{color:var(--ok);border-color:var(--ok)} .unc{color:var(--warn);border-color:var(--warn)}
+.one{font-weight:600;color:var(--text);font-size:18px;margin:4px 0}
+.s{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+.img{max-width:100%;border:1px solid var(--edge);border-radius:8px}
+ol.steps>li{margin:10px 0}
+.scroll{overflow-x:auto}
+footer{margin-top:64px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body><main>
+<div class="caps">Documentation</div>
+<h1>KYC and Wallet Activation Explainer</h1>
+<p class="lead wrap">Lead with the answer: you need KYC to send transactions on Redbelly mainnet. You do not need it to hold RBNT on an exchange or wrapped RBNT on another chain.</p>
+<p class="mono">Last verified 16 Oct 2026</p>
+
+<div class="grid">
+<div class="card"><div class="caps">Native vs wrapped</div>
+<p><b>Native mainnet activity</b> means sending transactions from a wallet on Redbelly Network. That needs KYC. <b>Wrapped RBNT</b> (WRBNT) lives on Ethereum or Base. Redbelly's access check does not apply there <span class="s">[S3] [S8]</span>.</p></div>
+<div class="card"><div class="caps">DAO vs network regions</div>
+<p><b>The DAO</b> removed its regional restriction. Anyone can join the DAO from any region <span class="s">[S9]</span>. <b>Redbelly Network</b> still does not offer services in 18 jurisdictions listed in clause 15.1 of its terms <span class="s">[S5]</span>. These are two separate rules.</p></div>
+</div>
+
+<h2 id="a">Part A. Do I need KYC?</h2>
+<p>Find your situation. Read the right column.</p>
+<div class="scroll"><table class="tbl">
+<tr><th>Your situation</th><th>KYC?</th><th>Reason</th></tr>
+<tr><td>RBNT on an exchange (Gate, MEXC)</td><td><span class="tag no">Not needed</span></td><td>Redbelly does not ask. The exchange sets its own KYC <span class="s">[S7]</span>.</td></tr>
+<tr><td>Wrapped RBNT on another chain (Ethereum, Base)</td><td><span class="tag no">Not needed</span></td><td>The token sits on that chain, not on Redbelly <span class="s">[S8]</span>.</td></tr>
+<tr><td>Bridging RBNT to Redbelly mainnet</td><td><span class="tag unc">Unconfirmed</span></td><td>Official pages do not say if a not yet enabled address can receive a bridged transfer. Safe order: verify and enable first, then bridge, because you need an enabled wallet to move the coins either way <span class="s">[S3] [S7]</span>.</td></tr>
+<tr><td>Using Redbelly mainnet (send, swap, deploy)</td><td><span class="tag need">Needed</span></td><td>Only accounts with the access credential get write access <span class="s">[S3]</span>.</td></tr>
+<tr><td>Staking on Redbelly mainnet</td><td><span class="tag need">Needed</span></td><td>Staking is a contract call on mainnet, so it is a transaction <span class="s">[S6] [S3]</span>.</td></tr>
+</table></div>
+<p>Same guide as an image, ready to pin:</p>
+<img class="img" src="assets/decision-guide.png" alt="Decision guide: do I need KYC on Redbelly. Exchange RBNT and wrapped RBNT: not needed. Bridging in: unconfirmed. Using mainnet and staking on mainnet: needed.">
+
+<h2 id="b">Part B. The five common questions</h2>
+
+<h3>1. Do I need KYC, and when?</h3>
+<p class="one">Yes to send transactions on Redbelly mainnet. No to hold RBNT or WRBNT elsewhere.</p>
+<p>Redbelly gives write access only to accounts that hold the Redbelly Network Access Credential <span class="s">[S3]</span>. Wrapped RBNT on Ethereum or Base is outside that check <span class="s">[S8]</span>. An exchange can ask for its own KYC. That is the exchange's rule, not Redbelly's.</p>
+
+<h3>2. How many wallets can one verified identity cover?</h3>
+<p class="one">About 10 wallets per verified identity. Unconfirmed in writing.</p>
+<p>After you enable your first account, Redbelly Access offers to add more accounts linked to your identity <span class="s">[S2]</span>. The figure of about 10 comes from the DAO task brief, which says it was verified with Averer <span class="s">[S9]</span>. I found no public Averer page that states it. What happens past the limit is unconfirmed. Go to Part D.</p>
+
+<h3>3. How long does approval take?</h3>
+<p class="one">No official time is published. Unconfirmed.</p>
+<p>In early January 2025 Redbelly said Averer had over 1.1 million sign-up requests in two weeks, and that incomplete documents needed manual checks, which slowed approvals <span class="s">[S10]</span>. That was a surge, not a current average. Complete, clear documents are the one thing you control.</p>
+
+<h3>4. Can I join from my country?</h3>
+<p class="one">The DAO: yes, from any region. The network: not from 18 listed jurisdictions.</p>
+<p>The DAO's old regional restriction has been removed <span class="s">[S9]</span>. Redbelly Network does not offer services in these jurisdictions: Afghanistan, Central African Republic, North Korea, Democratic Republic of the Congo, Guinea-Bissau (spelled Guinea-Bussau in the terms), Iran, Iraq, Lebanon, Libya, Myanmar, Russia, Somalia, South Sudan, Sudan, Syria, Ukraine, Yemen and Zimbabwe. Tax residents of, or people located in, those places cannot use the site or platform <span class="s">[S5]</span>. Joining the DAO does not change that.</p>
+
+<h3>5. Is KYC needed to stake, and why?</h3>
+<p class="one">Yes, to stake on Redbelly mainnet.</p>
+<p>The official staking page describes staking as a deposit call to a mainnet contract <span class="s">[S6]</span>. A deposit is a transaction, and only enabled accounts can send transactions <span class="s">[S3]</span>. Staking through an exchange or on another chain follows that venue's rules. Those are unconfirmed here.</p>
+
+<h2 id="c">Part C. Get verified and activate a wallet</h2>
+<h3>Before you start</h3>
+<ul>
+<li>A wallet that Redbelly Access supports: MetaMask or Coinbase Wallet <span class="s">[S2]</span>.</li>
+<li>A valid passport. The official process asks for a photo ID and verifies it with a biometric check <span class="s">[S3]</span>. Use a device with a camera.</li>
+<li>Time to finish in one sitting. Verification is free. The issuer covers the fees <span class="s">[S2]</span>.</li>
+</ul>
+<h3>Steps</h3>
+<ol class="steps">
+<li>Open <a href="https://access.redbelly.network/">access.redbelly.network</a>. Type the address yourself. Do not use links from messages.</li>
+<li>Connect the wallet you want to activate. This address becomes your public address on Redbelly Network <span class="s">[S2]</span>. If your wallet does not have the network, add it by hand with the details in the table below <span class="s">[S13]</span>.</li>
+<li>Accept the terms when asked <span class="s">[S5]</span>.</li>
+<li>Start identity verification. Averer, the accredited issuer, checks that you are who you say you are <span class="s">[S2] [S4]</span>.</li>
+<li>Follow the prompts to scan your passport and complete the biometric check <span class="s">[S3]</span>.</li>
+<li>When Averer approves you, it issues the Redbelly Network Access Credential to your account <span class="s">[S2]</span>.</li>
+<li>Enable your account in the portal and sign the transaction in your wallet. This is the step that gives the wallet write access <span class="s">[S3]</span>. The issuer covers the fees to grant access <span class="s">[S2]</span>. If enabling fails because the account has no funds, wait a few minutes and retry. That detail is community reported and unconfirmed <span class="s">[S12]</span>. The wallet is now activated.</li>
+</ol>
+<h3>Network details for your wallet</h3>
+<div class="scroll"><table class="tbl">
+<tr><th>Field</th><th>Mainnet value</th></tr>
+<tr><td>Network name</td><td class="mono">Redbelly Network Mainnet</td></tr>
+<tr><td>RPC URL</td><td class="mono">https://governors.mainnet.redbelly.network</td></tr>
+<tr><td>Chain ID</td><td class="mono">151</td></tr>
+<tr><td>Currency symbol</td><td class="mono">RBNT</td></tr>
+<tr><td>Block explorer</td><td class="mono">https://redbelly.routescan.io/</td></tr>
+</table></div>
+<p class="s">Source [S13]. The portal also offers a Testnet account after you enable your first one <span>[S2]</span>.</p>
+<h3>Add another wallet to the same identity</h3>
+<ol class="steps">
+<li>Open Redbelly Access again after your first account is enabled.</li>
+<li>Choose the option to add more accounts connected to your identity <span class="s">[S2]</span>.</li>
+<li>Connect the new wallet and enable it. You do not verify again. Stay within the wallet limit in Question 2.</li>
+</ol>
+<p class="s">Exact button names on the portal can change. Follow the labels on screen. This guide has no screenshots, so none can show personal information.</p>
+
+<h2 id="d">Part D. When something goes wrong</h2>
+<div class="card"><b>Approval is taking too long.</b>
+<p>Check that your passport photo is clear and complete, since incomplete documents trigger manual checks <span class="s">[S10]</span>. Then contact Averer through the Identity Verification support block on <a href="https://access.redbelly.network/">Redbelly Access</a> <span class="s">[S2]</span>. No official wait time exists, so none is promised here.</p></div>
+<div class="card"><b>Verification was rejected.</b>
+<p>Contact Averer through the same block and ask for the reason <span class="s">[S2]</span>. Redbelly Access names Averer as the contact for verification problems. The rules on retries are unconfirmed.</p></div>
+<div class="card"><b>The wallet limit is reached.</b>
+<p>Contact Averer and ask what the next step is. The limit is about 10 wallets and its written source is unconfirmed (Question 2). What Averer does beyond the limit is unconfirmed.</p></div>
+<div class="card"><b>The wallet will not connect or the account will not enable.</b>
+<p>Redbelly Access splits help in two. Identity problems go to Averer. Connection or account errors go to Redbelly Support <span class="s">[S2]</span>. Use the <a href="https://vine.redbelly.network/support/">Redbelly Support page</a>, which points to the Redbelly Discord <span class="s">[S14]</span>. Check the network details in Part C first.</p></div>
+<div class="card"><b>Open a support ticket with Averer.</b>
+<p>Start from the Identity Verification support block on <a href="https://access.redbelly.network/">Redbelly Access</a>. It is the official route to Averer <span class="s">[S2]</span>. I could not retrieve a public Averer help or ticket page, so I link none. Unconfirmed: add the exact Averer portal links here once checked on the live portal.</p></div>
+
+<h2 id="sources">Sources</h2>
+<p>Every factual claim above carries a tag. Claims without an official page are marked unconfirmed in the text.</p>
+<ul class="s" style="line-height:1.9;color:var(--text2)">
+<li>[S1] Individual onboarding overview: <a href="https://docs.redbelly.network/pages/eligibility-sdk/onboarding/individual/overview/">docs.redbelly.network</a>. Onboarding covers wallet authentication, KYC and on-chain permission setup.</li>
+<li>[S2] Redbelly Access and its FAQ: <a href="https://access.redbelly.network/">access.redbelly.network</a>. Averer verifies identity, free, MetaMask and Coinbase Wallet, add more accounts, contact Averer.</li>
+<li>[S3] User access: <a href="https://vine.redbelly.network/identity/user-access/">vine.redbelly.network/identity/user-access</a>. Access credential, passport, biometric check, self enable for write access.</li>
+<li>[S4] Accredited issuers: <a href="https://vine.redbelly.network/identity/accredited-issuers/">vine.redbelly.network/identity/accredited-issuers</a>.</li>
+<li>[S5] Redbelly terms and conditions, clause 15: <a href="https://redbelly.network/terms-and-conditions">redbelly.network/terms-and-conditions</a>.</li>
+<li>[S6] Staking: <a href="https://vine.redbelly.network/nodes/staking/">vine.redbelly.network/nodes/staking</a>.</li>
+<li>[S7] Native currency, where to get RBNT: <a href="https://vine.redbelly.network/native-currency/">vine.redbelly.network/native-currency</a>.</li>
+<li>[S8] Bridged tokens, WRBNT: <a href="https://vine.redbelly.network/bridged-tokens/lucidlabs/">vine.redbelly.network/bridged-tokens/lucidlabs</a>.</li>
+<li>[S9] TASK-18 brief on the <a href="https://taskboard.redbellydao.network/">DAO Task Board</a>. DAO regional restriction removed. Wallet limit of about 10, verified with Averer, no public Averer page found.</li>
+<li>[S10] Redbelly Network post on KYC waiting times, January 2025: <a href="https://x.com/RedbellyNetwork/status/1875013929019314508">x.com/RedbellyNetwork</a>.</li>
+<li>[S12] Community reported, unconfirmed: <a href="https://dev.to/rahmandefi/redbelly-network-troubleshooting-fixes-for-the-21-most-common-developer-errors-17i">DEV Community troubleshooting guide</a>. Enabling needs a funded account and is per network.</li>
+<li>[S13] Environments: <a href="https://vine.redbelly.network/environments">vine.redbelly.network/environments</a>. Mainnet name, RPC URL, chain ID 151, symbol, explorer.</li>
+<li>[S14] Redbelly support: <a href="https://vine.redbelly.network/support/">vine.redbelly.network/support</a>.</li>
+<li>[S11] Task Board brand kit: <a href="https://taskboard.redbellydao.network/brand">taskboard.redbellydao.network/brand</a>.</li>
+</ul>
+<footer>Last verified 16 Oct 2026. Facts expire, so recheck the sources before relying on this page.</footer>
+</main></body></html>
