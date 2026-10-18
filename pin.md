@@ -1,10 +1,13 @@
-**Do I need KYC on Redbelly?**
+Do I need Redbelly KYC?
 
-Yes, to send transactions on Redbelly mainnet and to stake there. No, to hold RBNT on an exchange or wrapped RBNT (WRBNT) on Ethereum or Base. Bridging into mainnet: unconfirmed.
+NOT NEEDED: RBNT on an exchange, or wrapped RBNT on Ethereum, Base and other chains.
+NEEDED: sending, swapping or bridging on Redbelly mainnet, and staking there. Verify and enable your wallet first.
 
-Anyone can join the DAO from any region. Redbelly Network itself does not serve 18 jurisdictions listed in clause 15.1 of its terms. Those are two separate rules.
+Get verified at access.redbelly.network. Averer checks your identity, usually in a few minutes. One identity can link up to 10 wallets.
 
-Get verified: access.redbelly.network (verification by Averer, passport plus biometric check). About 10 wallets per identity.
+DAO vs network: anyone can join the DAO from any region. Redbelly Network itself is not offered in 18 jurisdictions (terms, clause 15.1). Two separate rules.
 
-Full guide: <GUIDE LINK>
-Last verified 16 Oct 2026. Image: assets/decision-guide.png
+Stuck? Averer tickets: averer-help.freshdesk.com
+Full guide: https://kyc-explain.vercel.app/
+
+Last verified 18 Oct 2026. Post with decision-guide.png

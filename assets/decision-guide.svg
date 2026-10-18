@@ -16,10 +16,10 @@
 <rect x="818" y="392" width="172" height="42" rx="4" fill="none" stroke="#86EFAC" stroke-width="2"/>
 <text class="t" x="904.0" y="421" font-size="22" font-weight="700" fill="#86EFAC" text-anchor="middle">NOT NEEDED</text>
 <rect x="60" y="517" width="960" height="135" rx="8" fill="#141f26" stroke="#263641" stroke-width="2"/>
-<text class="t" x="90" y="572" font-size="30" font-weight="600" fill="#f1f5f8">Bridging RBNT to Redbelly mainnet</text>
-<text class="t" x="90" y="617" font-size="22" fill="#c2ced6">Official pages do not say</text>
-<rect x="804" y="543" width="186" height="42" rx="4" fill="none" stroke="#FCD34D" stroke-width="2"/>
-<text class="t" x="897.0" y="572" font-size="22" font-weight="700" fill="#FCD34D" text-anchor="middle">UNCONFIRMED</text>
+<text class="t" x="90" y="572" font-size="30" font-weight="600" fill="#f1f5f8">Bridging RBNT onto Redbelly mainnet</text>
+<text class="t" x="90" y="617" font-size="22" fill="#c2ced6">Verify and enable first, then bridge</text>
+<rect x="874" y="543" width="116" height="42" rx="4" fill="none" stroke="#EF5350" stroke-width="2"/>
+<text class="t" x="932.0" y="572" font-size="22" font-weight="700" fill="#EF5350" text-anchor="middle">NEEDED</text>
 <rect x="60" y="668" width="960" height="135" rx="8" fill="#141f26" stroke="#263641" stroke-width="2"/>
 <text class="t" x="90" y="723" font-size="30" font-weight="600" fill="#f1f5f8">Using Redbelly mainnet</text>
 <text class="t" x="90" y="768" font-size="22" fill="#c2ced6">Send, swap or deploy</text>
@@ -31,5 +31,5 @@
 <rect x="874" y="845" width="116" height="42" rx="4" fill="none" stroke="#EF5350" stroke-width="2"/>
 <text class="t" x="932.0" y="874" font-size="22" font-weight="700" fill="#EF5350" text-anchor="middle">NEEDED</text>
 <text class="t" x="60" y="1028" font-size="20" fill="#c2ced6">DAO: any region can join. Network: 18 jurisdictions not served (terms, clause 15.1).</text>
-<text class="m" x="60" y="1056" font-size="18" fill="#8fa1ad">Last verified 16 Oct 2026</text>
+<text class="m" x="60" y="1056" font-size="18" fill="#8fa1ad">Last verified 18 Oct 2026</text>
 </svg>

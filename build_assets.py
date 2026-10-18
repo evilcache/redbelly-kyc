@@ -21,13 +21,13 @@ LH = 110                                   # scale by height, width follows
 logo = logo.resize((round(logo.width * LH / logo.height), LH), Image.LANCZOS)
 
 W = H = 1080
-DATE = "Last verified 16 Oct 2026"
+DATE = "Last verified 18 Oct 2026"
 TITLE = "Do I need KYC on Redbelly?"
 SUB = "Native mainnet activity needs KYC. Wrapped RBNT on other chains does not."
 FOOT = "DAO: any region can join. Network: 18 jurisdictions not served (terms, clause 15.1)."
 rows = [("RBNT on an exchange", "NOT NEEDED", "#86EFAC", "The exchange sets its own KYC"),
         ("Wrapped RBNT on Ethereum or Base", "NOT NEEDED", "#86EFAC", "The token is not on Redbelly"),
-        ("Bridging RBNT to Redbelly mainnet", "UNCONFIRMED", "#FCD34D", "Official pages do not say"),
+        ("Bridging RBNT onto Redbelly mainnet", "NEEDED", "#EF5350", "Verify and enable first, then bridge"),
         ("Using Redbelly mainnet", "NEEDED", "#EF5350", "Send, swap or deploy"),
         ("Staking on Redbelly mainnet", "NEEDED", "#EF5350", "Staking is a mainnet transaction")]
 

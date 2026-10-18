@@ -2,7 +2,7 @@
 
 A plain language guide for the Redbelly DAO community. It answers whether you need KYC on Redbelly, how to get verified through Redbelly Access and Averer, and what to do when something goes wrong.
 
-Last verified 16 Oct 2026.
+Last verified 18 Oct 2026.
 
 ## What is in this repo
 
